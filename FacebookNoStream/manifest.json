@@ -1,0 +1,13 @@
+{
+  "name": "FacebookNoStream",
+  "manifest_version": 2,
+  "version": "0.1",
+  "description": "Hide Facebook stream.",
+  "permissions": ["http://*.facebook.com/", "https://*.facebook.com/"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "js": ["noStream.js"]
+    }
+  ]
+}
